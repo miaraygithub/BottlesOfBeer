@@ -1,7 +1,7 @@
 import java.util.Scanner;//We're gonna need scanner objects! woohoo
 public class BottlesOfBeer {
     public static void main(String[] args) { //main method (my bestie)
-        int beerBottlesOriginal; //To store the ideal user beer number (unaltered)
+        final int beerBottlesOriginal; //To store the ideal user beer number (unaltered)
         int beerBottles; //To iterate over, keeping track of how many beer bottles we have (gets changed)
         Scanner sc = new Scanner(System.in); //Scanner object named sc
         System.out.println("Enter the number of bottles to start with: "); //Prompt user for ideal bottle number
