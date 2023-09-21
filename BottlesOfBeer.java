@@ -9,8 +9,8 @@ public class BottlesOfBeer {
         beerBottles = beerBottlesOriginal; //Start our iterative variable out at the ideal beer number
         if (beerBottlesOriginal >= 2) { //Basically this is everything that happens above one bottle left
             while (beerBottles > 2) { //any beer number that's above two has no plurality issues so we can just iterate until we get down to 2
-                System.out.println(beerBottles + " bottles of beer on the wall, " + beerBottles + "bottles of beer."); //first line of the verse
-                System.out.println("Take one down and pass it around, " + beerBottles + "bottles of beer on the wall.\n"); //second line of the verse, \n is there to make our stanza breaks
+                System.out.println(beerBottles + " bottles of beer on the wall, " + beerBottles + " bottles of beer."); //first line of the verse
+                System.out.println("Take one down and pass it around, " + beerBottles + " bottles of beer on the wall.\n"); //second line of the verse, \n is there to make our stanza breaks
                 beerBottles -= 1; //take one beer off of the wall
 
             }
@@ -22,7 +22,7 @@ public class BottlesOfBeer {
 
         System.out.println("0 bottles of beer on the wall, 0 bottles of beer."); //this line of the song does not depend on plurality
         if (beerBottlesOriginal > 1) {
-            System.out.println("Go to the store and buy some more, " + beerBottlesOriginal + "bottles of beer on the wall"); //this sentance works for all except one
+            System.out.println("Go to the store and buy some more, " + beerBottlesOriginal + " bottles of beer on the wall"); //this sentance works for all except one
         } else if (beerBottlesOriginal == 1) { //if the user inputs only one beer we don't want to have our last message be "1 bottles of beer on the wall
             System.out.println("Go to the store and buy some more, 1 bottle of beer on the wall."); //the special case for 1 (idk if this should've been included I was just testing edge cases and the plurality was bad. I assume that we don't have to worry about if they input no beers or negative beers
         }
